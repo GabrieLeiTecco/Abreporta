@@ -34,10 +34,10 @@ function ficarParado(passou : boolean){
 
     if (resp == "sim" || resp == "Sim" || resp == "s"){
         passou = true
-        passarPorta(true)
+        passarPorta(passou)
     }else if(resp == "nao" || resp == "não" || resp == "Não" || resp == "Nao"){
         passou = false
-        passarPorta(false)
+        passarPorta(passou)
     }else if(resp == "cancelar" || resp == "cancel"){
         console.log("cabou")
     }else{
